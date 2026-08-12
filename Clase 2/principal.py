@@ -2,7 +2,9 @@
 import videojuego
 
 def main():
-    print("principal")
+    juegos = ["Minecraft", "Valorant", "Fortnite"]
+    #videojuegos.mostrar_juegos(juegos)
+
     
 if __name__=="__main__":
     main()
