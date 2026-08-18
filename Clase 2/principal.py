@@ -127,6 +127,7 @@ def integrador():
     print("\nMostrando el catalogo invertido:")
     print(juegos[::-1])
 
+    print()
     newJuego = lambda juegos: [j for j in juegos if len(j) >= 8]
     print(newJuego(juegos))
     
