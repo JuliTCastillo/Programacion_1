@@ -2,7 +2,7 @@
 import videojuegos
 
 # Lista inicial de diez videojuegos
-juegos =  ["Minecraft", "Valorant", "Fortnite", "FIFA", "Rocket League", "Roblox", "LOL", "Among Us"]
+juegos =  ["Minecraft", "Valorant", "Fortnite", "FIFA", "Rocket League", "Roblox", "LOL", "Among Us", "Call of Duty", "GTA V"]
 
 def probar_funciones():
     # --- Prueba de mostrar_juegos() ---
