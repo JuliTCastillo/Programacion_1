@@ -6,7 +6,7 @@ def buscar_juego(juegos, titulo):
     posicion = -1
     i = 0
     while posicion == -1 and i < len(juegos):
-        if juegos[i] == titulo:
+        if juegos[i].upper() == titulo.upper():
             posicion = i
         i += 1
     return posicion

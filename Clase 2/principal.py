@@ -98,3 +98,37 @@ mayor = lambda a, b: a if a > b else b
 aplicar_descuento = lambda precio, descuento: (precio/100)*(100 - descuento)
 
 
+# actividad 8
+
+def integrador():
+    # Lista inicial de diez videojuegos
+    juegos =  ["Minecraft", "Valorant", "Fortnite", "FIFA", "Rocket League", "Roblox", "LOL", "Among Us", "Call of Duty", "GTA V"]
+
+    #mostrar catalogo
+    videojuegos.mostrar_juegos(juegos)
+    print("cantidad de elementos: ", videojuegos.cantidad_juegos(juegos))
+
+    #Buscado titulo
+    buscar = input("\nIngrese el nombre del juego que quiere buscar: ")
+    resultado = videojuegos.buscar_juego(juegos, buscar)
+    
+    if resultado == -1:
+        print(f"\nEl titulo no se encontro, ahora fue agregado a la lista!")
+        videojuegos.agregar_juego(juegos, buscar)
+    else:
+        print(f"Posición encontrada: {resultado}")
+
+    print("\nMostrando los primeros 5 titulos:")
+    print(juegos[:5])
+
+    print("\nMostrando los ultimos 3 titulos:")
+    print(juegos[-3:])
+
+    print("\nMostrando el catalogo invertido:")
+    print(juegos[::-1])
+
+    newJuego = lambda juegos: [j for j in juegos if len(j) >= 8]
+    print(newJuego(juegos))
+    
+
+integrador()
