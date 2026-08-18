@@ -2,7 +2,7 @@
 import videojuegos
 
 # Lista inicial de diez videojuegos
-juegos =  ["Minecraft", "Valorant", "Fortnite", "FIFA", "Rocket League", "Roblox", "LOL", "Among Us"]
+juegos =  ["Minecraft", "Valorant", "Fortnite", "FIFA", "Rocket League", "Roblox", "LOL", "Among Us", "Call of Duty", "GTA V"]
 
 def probar_funciones():
     # --- Prueba de mostrar_juegos() ---
@@ -70,3 +70,31 @@ def modif_slicing(lista):
     copia_e = lista.copy()
     copia_e[:] = []
     print(copia_e)
+
+
+def duplicar_valores_lista(lista):
+    listaNueva = [i*2 for i in lista]
+    return listaNueva
+
+def puntajes_aprob(lista):
+    listaNueva = [i for i in lista if i >= 60]
+    return listaNueva
+
+def cuadrado_pares(lista):
+    listaNueva = [i**2 for i in lista if (i % 2) == 0]
+    return listaNueva
+
+def nota_final(calificaciones):
+    listaNueva = ["Aprobado" if nota >= 60 else "Revisar" for nota in calificaciones]
+    return listaNueva
+
+
+cuadrado = lambda x: x**2
+
+es_par = lambda x: x % 2 == 0
+
+mayor = lambda a, b: a if a > b else b
+
+aplicar_descuento = lambda precio, descuento: (precio/100)*(100 - descuento)
+
+
