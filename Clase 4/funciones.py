@@ -3,7 +3,7 @@ def cargar_productos():
     codigos_usados = []
 
     while True:
-        codigo = input("Código del producto (o 'FIN' para terminar): ")
+        codigo = input("\nCódigo del producto (o 'FIN' para terminar): ").upper()
         if codigo == "FIN":
             break
 
@@ -12,9 +12,13 @@ def cargar_productos():
             continue
 
         descripcion = input("Descripción: ")
-        precio = float(input("Precio: "))
+        precio = input("Precio: ")
 
-        producto = (codigo, descripcion, precio)
+        while not precio.isdigit():
+            precio = input("ERROR: \nPrecio: ")
+
+
+        producto = (codigo, descripcion, float(precio))
         productos.append(producto)
         codigos_usados.append(codigo)
 
