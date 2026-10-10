@@ -1,0 +1,4 @@
+Primer registro
+Segundo registro
+Tercer registro
+Cuarto registro

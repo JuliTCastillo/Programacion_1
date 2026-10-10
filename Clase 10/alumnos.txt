@@ -1,0 +1,10 @@
+909;Ana;Gómez;10
+10020;Luis;Fernández;3
+910;Marta;Rodríguez;2
+10040;López;3
+10050;Sofía;Martínez;10
+911;Lucas;García;abc
+10070;Julieta;Castillo
+912;Agustina;Pérez;6;extra
+abc;Tomás;Sánchez;2
+10100;Valentina;Díaz;3
