@@ -14,4 +14,4 @@ def test_lista_vacia():
 
 def test_igual_no_cuenta():
     assert contar_mayores([2], 2) == 0
-    pass
+
